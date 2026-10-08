@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /home/zizhuo/maglab_deploy && export CUDA_VISIBLE_DEVICES=1 && exec python3 -u /nfs_beijing_os/zizhuo_vcc/work/v14_predict.py --ckpt /nfs_beijing_os/zizhuo_vcc/ckpts/v13_compat/magworld_h1_v13_full_seed113_np1.pt --scale 0.5 --decode-style tight --jitter-shape 1000000 --cells-per-target 400 --controls-dir /home/zizhuo/vcc_data/extracted --genes /home/zizhuo/vcc_data/extracted/gene_names.csv --perts /home/zizhuo/vcc_data/extracted/pert_counts.csv --out /nfs_beijing_os/zizhuo_vcc/preds/v13_pure.h5ad

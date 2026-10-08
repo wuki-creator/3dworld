@@ -1,0 +1,37 @@
+# 数据文件
+*.npy
+*.npz
+*.csv
+*.tsv
+*.gz
+*.b64
+*.RData
+*.txt
+*.html
+
+# 图片/媒体
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+
+# 压缩包
+*.tgz
+*.tar.gz
+*.zip
+
+# Node / 构建产物
+node_modules/
+dist/
+__pycache__/
+*.pyc
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 论文/文档原件
+*.pdf
+*.docx

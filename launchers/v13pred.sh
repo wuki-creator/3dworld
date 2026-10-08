@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /home/zizhuo/maglab_deploy && export CUDA_VISIBLE_DEVICES=1 && exec python3 -u /nfs_beijing_os/zizhuo_vcc/work/v14_predict.py --ckpt /nfs_beijing_os/zizhuo_vcc/ckpts/v13_compat/magworld_h1_v13_full_seed113_np1.pt --controls-dir /home/zizhuo/vcc_data/extracted --genes /home/zizhuo/vcc_data/extracted/gene_names.csv --perts /home/zizhuo/vcc_data/extracted/pert_counts.csv --val-signatures /nfs_beijing_os/zizhuo_vcc/signatures/h1_val_signatures.npz --out /nfs_beijing_os/zizhuo_vcc/preds/v13solo_submission.h5ad
